@@ -40,15 +40,15 @@ User (Browser)
  
 Created a security group called `web-server-sg` to act as a firewall for the instance. Opened port 22 for SSH (restricted to my IP) and port 80 for HTTP (open to anyone).
  
-![Security Group Setup](images/01-security-group-setup.png)
+<img src="images/01-security-group-setup.png" alt="Security Group Setup" width="600">
  
-![Inbound Rules](images/02-inbound-rules.png)
+<img src="images/02-inbound-rules.png" alt="Inbound Rules" width="600">
  
 ### Launched the Instance and SSH'd In
  
 Spun up a `t2.micro` instance running Amazon Linux 2023, then connected via SSH from Git Bash.
  
-![SSH and Nginx Install](images/03-ssh-and-install.png)
+<img src="images/03-ssh-and-install.png" alt="SSH and Nginx Install" width="600">
  
 ### Installed Nginx
  
@@ -61,19 +61,19 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
  
-![Nginx Running](images/04-nginx-running.png)
+<img src="images/04-nginx-running.png" alt="Nginx Running" width="600">
  
 Hit the public IP in a browser and got the default Nginx welcome page:
  
-![Nginx Welcome Page](images/05-nginx-welcome.png)
+<img src="images/05-nginx-welcome.png" alt="Nginx Welcome Page" width="600">
  
 ### Deployed a Custom Page
  
 Replaced the default page with a custom HTML page styled with a dark gradient background and a glassmorphism card.
  
-![HTML on the Server](images/07-html-code.png)
+<img src="images/07-html-code.png" alt="HTML on the Server" width="600">
  
-![Custom Page Live](images/06-custom-page.png)
+<img src="images/06-custom-page.png" alt="Custom Page Live" width="600">
  
 ## What I Learned
  
