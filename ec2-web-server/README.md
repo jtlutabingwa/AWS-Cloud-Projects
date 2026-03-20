@@ -7,7 +7,7 @@ Launched an EC2 instance on AWS and deployed a custom static web page using Ngin
 | | |
 |---|---|
 | **Services Used** | EC2, VPC, Security Groups |
-| **Instance Type** | t2.micro (Free Tier) |
+| **Instance Type** | t3.micro (Free Tier) |
 | **OS** | Amazon Linux 2023 |
 | **Web Server** | Nginx |
  
@@ -25,7 +25,7 @@ User (Browser)
        ▼
 ┌──────────────┐
 │  EC2         │
-│  t2.micro    │
+│  t3.micro    │
 │              │
 │  Amazon      │
 │  Linux 2023  │
