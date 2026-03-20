@@ -10,6 +10,20 @@ Launched an EC2 instance on AWS and deployed a custom static web page using Ngin
 | **Instance Type** | t3.micro (Free Tier) |
 | **OS** | Amazon Linux 2023 |
 | **Web Server** | Nginx |
+
+## Key Concepts
+ 
+| Concept | What It Is |
+|---|---|
+| **EC2** | Elastic Compute Cloud — virtual machines in AWS |
+| **AMI** | Amazon Machine Image — the OS template used to launch an instance |
+| **t2.micro** | Small, free-tier-eligible instance type (1 vCPU, 1 GB RAM) |
+| **Key Pair** | Public/private key used for SSH authentication |
+| **Security Group** | Virtual firewall that controls inbound/outbound traffic to an instance |
+| **Elastic IP** | Static public IP address you can attach to an instance |
+| **Nginx** | Lightweight, high-performance web server |
+| **systemctl** | Linux command for managing services (start, stop, enable, status) |
+ 
  
 ## Architecture
  
