@@ -14,19 +14,6 @@ A collection of hands-on AWS projects for learning cloud fundamentals. Each proj
  
 This repo is a learning journal — each project is something I built from scratch to get hands-on experience with AWS. The goal is to move beyond tutorials and actually understand how these services work together.
  
-## Repo Structure
- 
-```
-aws-cloud-projects/
-├── README.md
-├── 01-ec2-web-server/
-│   ├── README.md          # Step-by-step walkthrough
-│   └── ...                # Config files, scripts, etc.
-├── 02-next-project/
-│   └── ...
-└── ...
-```
- 
 Each project folder contains its own README with:
 - What the project does
 - Architecture overview
