@@ -17,7 +17,7 @@ Launched an EC2 instance on AWS and deployed a custom static web page using Ngin
 |---|---|
 | **EC2** | Elastic Compute Cloud — virtual machines in AWS |
 | **AMI** | Amazon Machine Image — the OS template used to launch an instance |
-| **t2.micro** | Small, free-tier-eligible instance type (1 vCPU, 1 GB RAM) |
+| **t3.micro** | Small, free-tier-eligible instance type (1 vCPU, 1 GB RAM) |
 | **Key Pair** | Public/private key used for SSH authentication |
 | **Security Group** | Virtual firewall that controls inbound/outbound traffic to an instance |
 | **Elastic IP** | Static public IP address you can attach to an instance |
