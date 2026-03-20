@@ -1,4 +1,4 @@
-# AWS Cloud Projects
+# ☁️ AWS Cloud Projects
  
 A collection of hands-on AWS projects I built from scratch to learn cloud fundamentals. Each project is self-contained with architecture notes, screenshots, and key takeaways.
  
