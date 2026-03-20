@@ -10,6 +10,20 @@ Built a fully serverless REST API on AWS using Lambda, API Gateway, and DynamoDB
 | **Runtime** | Python 3.12 |
 | **Endpoints** | GET, POST, PUT, DELETE |
 | **Cost** | Free Tier eligible |
+
+
+## Key Concepts
+ 
+| Concept | What It Is |
+|---|---|
+| **Lambda** | Serverless compute — runs code on demand, no server to manage |
+| **API Gateway** | Managed service that creates HTTP endpoints and routes them to Lambda |
+| **DynamoDB** | Fully managed NoSQL database with single-digit millisecond performance |
+| **IAM Role** | Defines what permissions a service has (Lambda → DynamoDB access) |
+| **Serverless** | Architecture where the cloud provider manages all infrastructure |
+| **REST API** | HTTP-based API design using standard methods (GET, POST, PUT, DELETE) |
+
+
  
 ## Architecture
  
@@ -100,18 +114,6 @@ All four operations working:
  
 <img src="images/09-postman-delete.png" alt="DELETE - Remove Todo" width="600">
 
- ## Key Concepts
- 
-| Concept | What It Is |
-|---|---|
-| **Lambda** | Serverless compute — runs code on demand, no server to manage |
-| **API Gateway** | Managed service that creates HTTP endpoints and routes them to Lambda |
-| **DynamoDB** | Fully managed NoSQL database with single-digit millisecond performance |
-| **IAM Role** | Defines what permissions a service has (Lambda → DynamoDB access) |
-| **Serverless** | Architecture where the cloud provider manages all infrastructure |
-| **REST API** | HTTP-based API design using standard methods (GET, POST, PUT, DELETE) |
-
----
 
 ## What I Learned
  
