@@ -12,7 +12,6 @@ A collection of hands-on AWS projects I built from scratch to learn cloud fundam
  
 ## Up Next
  
-- **S3 Static Website + CloudFront** — Host a site on S3 with a CDN and custom domain
 - **Infrastructure as Code** — Recreate one of the above projects using CloudFormation or Terraform
 - **CI/CD Pipeline** — Automate deployments with CodePipeline and CodeDeploy
  
