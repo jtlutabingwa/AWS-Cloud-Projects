@@ -4,9 +4,10 @@ A collection of hands-on AWS projects for learning cloud fundamentals. Each proj
  
 ## Projects
  
-| # | Project | Services Used | Difficulty | Time |
-|---|---------|---------------|------------|------|
-| 1 | [EC2 Web Server](./ec2-web-server/) | EC2, Security Groups, Elastic IP | Beginner | ~2 hrs |
+| # | Project | Services Used | 
+|---|---------|---------------|
+| 1 | [EC2 Web Server](./ec2-web-server/) | EC2, Security Groups, Elastic IP | 
+| 2 | [Serverless To-Do List API](./serverless-todo-api/) | Lambda, API Gateway, DynamoDB, IAM |
  
 > More projects coming soon.
  
