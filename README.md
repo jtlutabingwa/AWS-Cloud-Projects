@@ -6,7 +6,7 @@ A collection of hands-on AWS projects for learning cloud fundamentals. Each proj
  
 | # | Project | Services Used | Difficulty | Time |
 |---|---------|---------------|------------|------|
-| 1 | [EC2 Web Server](./01-ec2-web-server/) | EC2, Security Groups, Elastic IP | Beginner | ~2 hrs |
+| 1 | [EC2 Web Server](./ec2-web-server/) | EC2, Security Groups, Elastic IP | Beginner | ~2 hrs |
  
 > More projects coming soon.
  
