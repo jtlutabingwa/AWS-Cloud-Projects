@@ -183,9 +183,8 @@ To avoid charges, tear down resources when done:
 2. **Release Elastic IP** (if created): EC2 → Elastic IPs → select → Actions → Release
 3. **Delete Security Group:** EC2 → Security Groups → delete `web-server-sg`
 4. **Delete Key Pair:** EC2 → Key Pairs → delete your key
- 
-> **Tip:** You can also just **stop** the instance if you want to come back to it later. You'll still pay for EBS storage, but it's free-tier eligible (up to 30 GB for 12 months).
- 
+
+  
 ## Key Concepts
  
 | Concept | Description |
