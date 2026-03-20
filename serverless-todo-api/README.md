@@ -46,6 +46,10 @@ Set up a `Todos` table with `id` (String) as the partition key and on-demand cap
  
 <img src="images/01-dynamodb-table.png" alt="DynamoDB Table" width="600">
  
+Items stored in the table after creating a to-do through the API:
+ 
+<img src="images/12-dynamodb-items.png" alt="DynamoDB Items" width="600">
+ 
 ### Created an IAM Role for Lambda
  
 Created `lambda-todo-role` with `AmazonDynamoDBFullAccess` and `AWSLambdaBasicExecutionRole` policies so the Lambda function has permission to read/write to DynamoDB and log to CloudWatch.
@@ -78,7 +82,7 @@ Created a REST API with a `/todos` resource and wired up GET, POST, PUT, and DEL
  
 ### Tested with Postman
  
-All four operations are working:
+All four operations working:
  
 **POST** — Create a new to-do (201 Created):
  
