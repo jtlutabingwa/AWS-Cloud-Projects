@@ -99,7 +99,20 @@ All four operations working:
 **DELETE** — Remove a to-do (200 OK):
  
 <img src="images/09-postman-delete.png" alt="DELETE - Remove Todo" width="600">
+
+ ## Key Concepts
  
+| Concept | What It Is |
+|---|---|
+| **Lambda** | Serverless compute — runs code on demand, no server to manage |
+| **API Gateway** | Managed service that creates HTTP endpoints and routes them to Lambda |
+| **DynamoDB** | Fully managed NoSQL database with single-digit millisecond performance |
+| **IAM Role** | Defines what permissions a service has (Lambda → DynamoDB access) |
+| **Serverless** | Architecture where the cloud provider manages all infrastructure |
+| **REST API** | HTTP-based API design using standard methods (GET, POST, PUT, DELETE) |
+
+---
+
 ## What I Learned
  
 - How serverless architecture works — Lambda only runs when triggered, no idle servers
