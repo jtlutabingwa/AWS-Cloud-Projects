@@ -11,11 +11,6 @@ A collection of hands-on AWS projects I built from scratch to learn cloud fundam
 | 3 | [Serverless To-Do List API](./serverless-todo-api/) | Lambda, API Gateway, DynamoDB, IAM |
 | 4 | [CI/CD Pipeline — GitHub Actions to AWS](./cicd-pipeline/) | GitHub Actions, IAM, S3, CloudFront |
  
-## Up Next
- 
-- **Infrastructure as Code** — Recreate one of the above projects using CloudFormation or Terraform
-- **CI/CD Pipeline** — Automate deployments with CodePipeline and CodeDeploy
- 
 ## Cost
  
 All projects target the **AWS Free Tier** where possible. Any project that may incur costs will call that out clearly. 
