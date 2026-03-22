@@ -15,9 +15,3 @@ A collection of hands-on AWS projects I built from scratch to learn cloud fundam
  
 All projects target the **AWS Free Tier** where possible. Any project that may incur costs will call that out clearly. 
  
-## Prerequisites
- 
-- An AWS account ([sign up](https://aws.amazon.com/free/))
-- Git Bash, WSL, or any Unix-like terminal
-- Basic command line familiarity
- 
