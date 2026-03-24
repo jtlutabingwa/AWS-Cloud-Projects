@@ -11,6 +11,25 @@ A collection of hands-on AWS projects I built from scratch to learn cloud fundam
 | 3 | [Serverless To-Do List API](./serverless-todo-api/) | Lambda, API Gateway, DynamoDB, IAM |
 | 4 | [CI/CD Pipeline — GitHub Actions to AWS](./cicd-pipeline/) | GitHub Actions, IAM, S3, CloudFront |
 | 5 | [AWS Log Monitoring & Alert System](./log-monitoring-alert-system/) | S3, Lambda, CloudWatch, SNS |
+
+---
+
+## 🔍 Project Highlights
+
+### ☁️ Cloud Resume
+Deployed a static website using Amazon S3 and CloudFront to demonstrate cloud hosting and CDN delivery.
+
+### 🖥️ EC2 Web Server
+Provisioned a Linux-based EC2 instance and configured security groups to allow secure web traffic.
+
+### ⚙️ Serverless To-Do List API
+Built a RESTful API using AWS Lambda, API Gateway, and DynamoDB with role-based IAM permissions.
+
+### 🔄 CI/CD Pipeline
+Automated AWS deployments using GitHub Actions to enable continuous integration and delivery.
+
+### 🚨 Log Monitoring & Alert System
+Implemented a serverless monitoring pipeline that analyzes authentication logs and sends alerts for suspicious activity.
  
 ## Cost
  
