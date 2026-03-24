@@ -20,12 +20,6 @@ When a log file is uploaded:
 
 ---
 
-# 🏗️ Architecture Diagram
-
-
-
----
-
 # 📸 Project Screenshots
 
 ## Lambda Function with S3 Trigger
@@ -209,13 +203,6 @@ aws-log-monitoring-system/
 - Cloud-based threat detection
 - Serverless security architecture
 
----
-
-# 👨‍💻 Author
-
-**Jonathan Lutabingwa**  
-Cybersecurity & Cloud Engineering Student  
-University of North Carolina at Charlotte  
 
 ---
 
