@@ -36,12 +36,12 @@ When a log file is uploaded:
 
 ## S3 Bucket with Uploaded Log
 
-![SNS Topic](images/sns-topic.png)
+![SNS Topic](images/s3-bucket.png)
 
 ---
 
 ## SNS Topic Configuration
-![S3 Bucket](images/s3-bucket.png)
+![S3 Bucket](images/sns-topic.png)
 
 
 ---
