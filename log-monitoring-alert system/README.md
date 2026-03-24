@@ -1,4 +1,4 @@
-# AWS Log Monitoring & Alert System
+# 🚨 AWS Log Monitoring & Alert System
 
 A serverless security monitoring system built on AWS that detects suspicious login activity and sends real-time alerts.
 
@@ -6,7 +6,7 @@ This project simulates a **Security Operations Center (SOC)** workflow by analyz
 
 ---
 
-# Project Overview
+# 📌 Project Overview
 
 This system automatically analyzes uploaded log files and detects suspicious activity such as repeated failed login attempts.
 
@@ -18,29 +18,41 @@ When a log file is uploaded:
 4. Suspicious IPs are detected
 5. **Amazon SNS** sends email alerts
 
-This simulates a **real-world cloud security monitoring pipeline**.
+---
+
+# 🏗️ Architecture Diagram
+
+![Lambda Overview](images/lambda-overview.png)
 
 ---
 
-# Architecture
+# 📸 Project Screenshots
 
-```
-Log File Upload
-        ↓
-     Amazon S3
-        ↓
-     AWS Lambda
-        ↓
-   Log Analysis (Python)
-        ↓
-     Amazon SNS
-        ↓
-   Email Alert Sent
-```
+## Lambda Function with S3 Trigger
+
+![Lambda with S3 Trigger](images/lambda-s3-trigger.png)
 
 ---
 
-# Technologies Used
+## S3 Bucket with Uploaded Log
+
+![S3 Bucket](images/s3-bucket.png)
+
+---
+
+## SNS Topic Configuration
+
+![SNS Topic](images/sns-topic.png)
+
+---
+
+## Email Alert Received
+
+![Email Alert](images/email-alert.png)
+
+---
+
+# 🛠️ Technologies Used
 
 - **AWS S3** — Log storage
 - **AWS Lambda** — Serverless log analysis
@@ -51,7 +63,7 @@ Log File Upload
 
 ---
 
-# Features
+# 🔍 Features
 
 ✅ Detects repeated failed login attempts  
 ✅ Identifies suspicious IP addresses  
@@ -62,7 +74,7 @@ Log File Upload
 
 ---
 
-# Detection Logic
+# 🧠 Detection Logic
 
 The system detects brute-force login attempts by:
 
@@ -82,11 +94,9 @@ Example threshold:
 THRESHOLD = 3
 ```
 
-If an IP fails login **3 or more times**, an alert is triggered.
-
 ---
 
-# Example Log File
+# 📂 Example Log File
 
 Example `auth.log`:
 
@@ -96,16 +106,9 @@ Mar 10 10:15:05 server sshd[1235]: Failed password for invalid user root from 19
 Mar 10 10:15:07 server sshd[1236]: Failed password for invalid user test from 192.168.1.10 port 22 ssh2
 ```
 
-This triggers:
-
-```
-Security Alert Detected
-Multiple login failures from IP: 192.168.1.10 (3 attempts)
-```
-
 ---
 
-# Setup Instructions
+# ⚙️ Setup Instructions
 
 ## Step 1 — Create S3 Bucket
 
@@ -145,7 +148,7 @@ Create topic:
 security-alerts
 ```
 
-Add an email subscription and confirm it.
+Add email subscription and confirm it.
 
 ---
 
@@ -156,8 +159,6 @@ Attach S3 trigger to Lambda:
 ```
 Event type: PUT
 ```
-
-This automatically runs Lambda when logs are uploaded.
 
 ---
 
@@ -178,32 +179,28 @@ Multiple login failures from IP: ...
 
 ---
 
-# Example Alert Email
+# 📁 Project Structure
 
 ```
-Subject: Security Alert Detected
-
-Multiple login failures from IP: 192.168.1.10 (3 attempts)
+aws-log-monitoring-system/
+│
+├── lambda_function.py
+├── sample_logs/
+│   └── auth.log
+│
+├── images/
+│   ├── lambda-overview.png
+│   ├── lambda-s3-trigger.png
+│   ├── s3-bucket.png
+│   ├── sns-topic.png
+│   └── email-alert.png
+│
+├── README.md
 ```
 
 ---
 
-# Future Improvements
-
-Planned upgrades:
-
-- Add **IP risk scoring**
-- Store alerts in **DynamoDB**
-- Add **GeoIP location detection**
-- Build **dashboard visualization**
-- Integrate **AI-based anomaly detection**
-- Add **multiple log format support**
-
----
-
-# Security Concepts Demonstrated
-
-This project demonstrates:
+# 🔐 Security Concepts Demonstrated
 
 - Brute-force detection
 - Log parsing and monitoring
@@ -213,3 +210,22 @@ This project demonstrates:
 - Serverless security architecture
 
 ---
+
+# 👨‍💻 Author
+
+**Jonathan Lutabingwa**  
+Cybersecurity & Cloud Engineering Student  
+University of North Carolina at Charlotte  
+
+---
+
+# ⭐ Why This Project Matters
+
+This project simulates a **real-world SOC detection pipeline** and demonstrates:
+
+- Cloud engineering skills
+- Security automation
+- AWS serverless architecture
+- Log analysis and monitoring
+
+These are **core skills required for cloud and cybersecurity roles.**
