@@ -22,7 +22,7 @@ When a log file is uploaded:
 
 # 🏗️ Architecture Diagram
 
-![Lambda Overview](images/lambda-overview.png)
+
 
 ---
 
@@ -30,7 +30,7 @@ When a log file is uploaded:
 
 ## Lambda Function with S3 Trigger
 
-![Lambda with S3 Trigger](images/lambda-s3-trigger.png)
+![Lambda Overview](images/lambda-overview.png)
 
 ---
 
