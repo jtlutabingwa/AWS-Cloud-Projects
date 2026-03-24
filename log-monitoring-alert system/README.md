@@ -1,4 +1,4 @@
-# 🚨 AWS Log Monitoring & Alert System
+# AWS Log Monitoring & Alert System
 
 A serverless security monitoring system built on AWS that detects suspicious login activity and sends real-time alerts.
 
@@ -6,7 +6,7 @@ This project simulates a **Security Operations Center (SOC)** workflow by analyz
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 This system automatically analyzes uploaded log files and detects suspicious activity such as repeated failed login attempts.
 
@@ -22,7 +22,7 @@ This simulates a **real-world cloud security monitoring pipeline**.
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 
 ```
 Log File Upload
@@ -40,7 +40,7 @@ Log File Upload
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 - **AWS S3** — Log storage
 - **AWS Lambda** — Serverless log analysis
@@ -51,7 +51,7 @@ Log File Upload
 
 ---
 
-# 🔍 Features
+# Features
 
 ✅ Detects repeated failed login attempts  
 ✅ Identifies suspicious IP addresses  
@@ -62,7 +62,7 @@ Log File Upload
 
 ---
 
-# 🧠 Detection Logic
+# Detection Logic
 
 The system detects brute-force login attempts by:
 
@@ -86,7 +86,7 @@ If an IP fails login **3 or more times**, an alert is triggered.
 
 ---
 
-# 📂 Example Log File
+# Example Log File
 
 Example `auth.log`:
 
@@ -99,13 +99,13 @@ Mar 10 10:15:07 server sshd[1236]: Failed password for invalid user test from 19
 This triggers:
 
 ```
-🚨 Security Alert Detected
+Security Alert Detected
 Multiple login failures from IP: 192.168.1.10 (3 attempts)
 ```
 
 ---
 
-# ⚙️ Setup Instructions
+# Setup Instructions
 
 ## Step 1 — Create S3 Bucket
 
@@ -178,7 +178,7 @@ Multiple login failures from IP: ...
 
 ---
 
-# 📊 Example Alert Email
+# Example Alert Email
 
 ```
 Subject: Security Alert Detected
@@ -188,7 +188,7 @@ Multiple login failures from IP: 192.168.1.10 (3 attempts)
 
 ---
 
-# 🧪 Future Improvements
+# Future Improvements
 
 Planned upgrades:
 
@@ -201,7 +201,7 @@ Planned upgrades:
 
 ---
 
-# 🔐 Security Concepts Demonstrated
+# Security Concepts Demonstrated
 
 This project demonstrates:
 
