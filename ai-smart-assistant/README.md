@@ -16,58 +16,51 @@ An HR department is overwhelmed by **500+ daily employee requests** covering pol
 
 An AI Smart Assistant powered by Amazon Bedrock that provides **24/7 automated responses** to common HR inquiries, freeing up the HR team to focus on complex cases.
 
-### Architecture
+## Architecture
 
-```
-Employee Query
-      │
-      ▼
-┌──────────────┐     ┌─────────────────────┐     ┌──────────────┐
-│   Amazon     │────▶│  Amazon Bedrock      │────▶│   Amazon     │
-│   Bedrock    │     │  Knowledge Bases     │     │     S3       │
-│   Agent      │     │  (Policies & Docs)   │     │  (HR Docs)   │
-│              │     └─────────────────────┘     └──────────────┘
-│              │
-│              │     ┌─────────────────────┐     ┌──────────────┐
-│              │────▶│   Action Groups     │────▶│  AWS Lambda   │
-│              │     │  (Custom Actions)   │     │  (Logic)      │
-└──────────────┘     └─────────────────────┘     └──────────────┘
-                                                        │
-                                                        ▼
-                                                 ┌──────────────┐
-                                                 │   Amazon     │
-                                                 │  DynamoDB    │
-                                                 │ (Employee    │
-                                                 │  Records)    │
-                                                 └──────────────┘
-```
+![Architecture Diagram](architecture.png)
+
+### How It Works
+
+1. **Users** send queries to **Amazon Bedrock**, which routes them to a **Bedrock Agent** for orchestration.
+
+2. The **Bedrock Agent** determines intent and takes one of two paths:
+
+   - **Action Groups (Lambda)** — For transactional requests, the agent invokes Lambda functions:
+     - `submit_leave` — Processes employee leave requests and writes to **DynamoDB**
+     - `submit_benefits` — Handles benefits enrollment/inquiries and writes to **DynamoDB**
+
+   - **Knowledge Base (RAG)** — For policy and procedure questions, the agent queries a **Knowledge Base** backed by **Amazon OpenSearch Service** for vector search, which retrieves relevant HR documents stored in an **S3 bucket**.
 
 ## AWS Services Used
 
 | Service | Purpose |
 |---------|---------|
 | **Amazon Bedrock** | Foundation model hosting and agent orchestration |
-| **Amazon S3** | Storage for HR policy documents and knowledge base source data |
-| **Amazon OpenSearch Service** | Vector search for knowledge base retrieval |
-| **AWS Lambda** | Backend logic for action groups |
-| **Amazon DynamoDB** | Employee data and request tracking |
+| **Amazon Bedrock Agent** | Intent routing, action group execution, and knowledge base queries |
+| **AWS Lambda** | Backend logic for `submit_leave` and `submit_benefits` action groups |
+| **Amazon DynamoDB** | Storage for leave requests and benefits data |
+| **Amazon OpenSearch Service** | Vector search engine for knowledge base retrieval |
+| **Amazon S3** | Storage for HR policy documents used by the knowledge base |
 
 ## What I Learned
 
 - Setting up an **Amazon Bedrock Agent** with knowledge bases for retrieval-augmented generation (RAG)
 - Connecting **knowledge bases** to S3-hosted documents so the agent can answer policy questions accurately
-- Adding **action groups** to extend the agent's capabilities beyond simple Q&A
-- Integrating **Lambda functions** as the compute layer for custom actions
-- Using **DynamoDB** for structured data lookups alongside unstructured document retrieval
+- Adding **action groups** with specific Lambda functions (`submit_leave`, `submit_benefits`) to handle transactional workflows
+- Using **OpenSearch Service** as the vector store for semantic document search
+- Using **DynamoDB** for structured data storage behind action groups
 
-## Workshop Format
+### Key Setup Steps
 
-This project was built using **AWS SimuLearn**, a generative AI-powered learning platform that simulates real-world client engagements. The format included:
-
-1. **Discovery** — Conversing with an AI-generated HR customer to understand requirements
-2. **Design** — Proposing an architecture using AWS services
-3. **Build** — Implementing the solution step-by-step in a live AWS Management Console
-4. **Validate** — Testing the assistant against real HR queries
+1. **Enable Bedrock model access** in the AWS Console for your chosen foundation model
+2. **Create an S3 bucket** and upload HR policy documents
+3. **Set up OpenSearch Service** as the vector store
+4. **Create a Bedrock Knowledge Base** pointing to S3 with OpenSearch as the backend
+5. **Create Lambda functions** for `submit_leave` and `submit_benefits`
+6. **Configure DynamoDB tables** for leave and benefits records
+7. **Create a Bedrock Agent** with action groups linked to Lambda and the knowledge base attached
+8. **Test the agent** in the Bedrock console playground
 
 ## Acknowledgments
 
