@@ -18,7 +18,7 @@ An AI Smart Assistant powered by Amazon Bedrock that provides **24/7 automated r
 
 ## Architecture
 
-![Architecture Diagram](architecture.png)
+![Architecture Diagram](images/architecture.png)
 
 ### How It Works
 
