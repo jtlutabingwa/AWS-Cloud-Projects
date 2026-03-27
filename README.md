@@ -11,6 +11,7 @@ A collection of hands-on AWS projects I built from scratch to learn cloud fundam
 | 3 | [Serverless To-Do List API](./serverless-todo-api/) | Lambda, API Gateway, DynamoDB, IAM |
 | 4 | [CI/CD Pipeline — GitHub Actions to AWS](./cicd-pipeline/) | GitHub Actions, IAM, S3, CloudFront |
 | 5 | [AWS Log Monitoring & Alert System](./log-monitoring-alert-system/) | S3, Lambda, CloudWatch, SNS |
+| 6 | [AI Smart Assistant](./ai-smart-assistant/) | Bedrock, DynamoDB, Lambda, OpenSearch, SNS |
 
 ---
 
@@ -30,6 +31,9 @@ Automated AWS deployments using GitHub Actions to enable continuous integration 
 
 ### 🚨 Log Monitoring & Alert System
 Implemented a serverless monitoring pipeline that analyzes authentication logs and sends alerts for suspicious activity.
+
+##  🤖 AI Smart Assistant
+Built an intelligent HR assistant using Amazon Bedrock agents, knowledge bases, Lambda action groups, and DynamoDB to automate 500+ daily employee inquiries.
  
 ## Cost
  
