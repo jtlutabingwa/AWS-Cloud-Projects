@@ -32,7 +32,7 @@ Automated AWS deployments using GitHub Actions to enable continuous integration 
 ### 🚨 Log Monitoring & Alert System
 Implemented a serverless monitoring pipeline that analyzes authentication logs and sends alerts for suspicious activity.
 
-##  🤖 AI Smart Assistant
+###  🤖 AI Smart Assistant
 Built an intelligent HR assistant using Amazon Bedrock agents, knowledge bases, Lambda action groups, and DynamoDB to automate 500+ daily employee inquiries.
  
 ## Cost
